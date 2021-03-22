@@ -35,6 +35,8 @@ h1{
     background: rgba(255,255,255, .1) ;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: 1s linear;
 }
@@ -74,11 +76,6 @@ h1{
     transform: perspective(1000px) rotateY(0deg);
 }
 
-.vanish {
-    display: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
 
 input[type=text], input[type=password] {
     background: none;
