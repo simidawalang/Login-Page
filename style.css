@@ -41,33 +41,51 @@ h1{
 
 /*Default form positions*/
 
-.default-login{
+.default-login {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    -moz-transform: perspective(1000px) rotateY(0deg);
+    -ms-transform: perspective(1000px) rotateY(0deg);
+    -o-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
 }
-.default-signup{
+.default-signup {
+    -webkit-transform: perspective(1000px) rotateY(180deg);
+    -moz-transform: perspective(1000px) rotateY(180deg);
+    -ms-transform: perspective(1000px) rotateY(180deg);
+    -o-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
 }
 
-/* Classes to rotate the form*/
+/* Classes to rotate the form, from login to sign up*/
 
-.rotate-login
-{
+.rotate-login {
+    -webkit-transform: perspective(1000px) rotateY(-180deg);
+    -moz-transform: perspective(1000px) rotateY(-180deg);
+    -ms-transform: perspective(1000px) rotate(-180deg);
+    -o-transform: perspective(1000px) rotateY(-180deg);
     transform: perspective(1000px) rotateY(-180deg);
-    
 }
 
 .rotate-signup {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    -moz-transform: perspective(1000px) rotateY(0deg);
+    -ms-transform: perspective(1000px) rotateY(0deg);
+    -o-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
-    z-index: 100;
 }
 
 .vanish {
     display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password] {
     background: none;
     border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     border-bottom: 1px solid rgba(255,255,255,.6);
     outline: none;
     width: 100%;
@@ -105,15 +123,16 @@ input[type=checkbox]{
     border: 1px solid red;
 }
 
-button{
+button {
     width: 100%;
+    background: rgba(255,255,255,.9);
     border: none;
     border-radius: 3px;
     padding: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(0,0,0,.65);
-    transition: .4s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 button:hover{
