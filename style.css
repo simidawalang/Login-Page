@@ -42,7 +42,7 @@ form{
 }
 
 .vanish{
-    animation: fade 1s linear;
+    animation: fade .5s ease-in;
     animation-fill-mode: forwards;
 }
 
