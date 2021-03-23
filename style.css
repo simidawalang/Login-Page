@@ -41,8 +41,12 @@ form{
     width: 100%;
 }
 
+.no-display{
+    display: none;
+}
+
 .vanish{
-    animation: fade .5s ease-in;
+    animation: fade .5s ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -56,6 +60,23 @@ form{
         display: none;
     }
 }
+
+.appear {
+    animation: show .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /*Default form positions*/
 
 .default-login {
