@@ -158,4 +158,8 @@ form p:hover{
     .login-card{
         max-width: 300px;
     }
+
+    .icons i{
+        margin: 0 5px;
+    }
 }
