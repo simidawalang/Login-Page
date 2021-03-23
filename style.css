@@ -149,7 +149,7 @@ form p:hover{
     transition: .3s linear;
 }
 
-.icons i:hover{
+.icons i:hover{S
     cursor: pointer;
     color: #fff;
 }
@@ -157,6 +157,10 @@ form p:hover{
 @media(max-width: 576px) {
     .login-card{
         max-width: 300px;
+    }
+
+    .icons{
+        margin-left: 10px;
     }
 
     .icons i{
