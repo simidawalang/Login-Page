@@ -164,6 +164,7 @@ form p:hover{
     }
 
     .icons i{
+        color: red;
         margin: 0 5px;
     }
 }
