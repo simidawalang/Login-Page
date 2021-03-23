@@ -149,7 +149,7 @@ form p:hover{
     transition: .3s linear;
 }
 
-.icons i:hover{S
+.icons i:hover{
     cursor: pointer;
     color: #fff;
 }
@@ -160,7 +160,7 @@ form p:hover{
     }
 
     .icons{
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .icons i{
